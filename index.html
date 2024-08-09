@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/navbar.css">
-    <title>André Victor - Portifólio</title>
+    <title>André Victor | Portifólio</title>
 </head>
 <body>
     <header class="navbar">
         <nav>
             <div class="logo">
-                <img src="./src/img/logo.png" alt="Logo">
+                <a href="./index.html"><img src="./src/img/logo.png" alt="Logo"></a>
             </div>
 
             <div id="menu">
@@ -18,16 +18,33 @@
                     <ul>
                         <li><a href="###">Sobre mim</a></li>
                         <li><a href="###">Formação</a></li>
+                        <li>|</li>
                         <li><a href="###">Portifólio</a></li>
                         <li><a href="###">Contato</a></li>
                     </ul>
                 </menu>
             </div>
+
+            <span id="barras">&equiv;</span>
         </nav>
+        
+        <div id="menuMobile">
+            <img id="fechar" src="./src/img/x.svg" alt="Fechar menu">
+            <menu>
+                <ul>
+                    <li><a href="###">Sobre mim</a></li>
+                    <li><a href="###">Formação</a></li>
+                    <li><a href="###">Portifólio</a></li>
+                    <li><a href="###">Contato</a></li>
+                </ul>
+            </menu>
+        </div>
     </header>
 
     <section></section>
 
     <footer></footer>
+
+    <script src="./src/js/navbar.js"></script>
 </body>
 </html>
