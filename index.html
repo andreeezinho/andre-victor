@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Chamando os arquivos css -->
     <link rel="stylesheet" href="./src/css/navbar.css">
     <link rel="stylesheet" href="./src/css/section.css">
     <link rel="stylesheet" href="./src/css/sobreMim.css">
     <title>André Victor | Portifólio</title>
 </head>
 <body>
+    <!-- Começo da barra de navegação -->
     <header class="navbar">
         <nav>
             <div class="logo">
@@ -30,11 +32,12 @@
             <span id="barras">&equiv;</span>
         </nav>
         
+        <!-- Barra de navegação responsiva para mobile -->
         <div id="menuMobile">
             <img id="fechar" src="./src/img/x.svg" alt="Fechar menu">
             <menu>
                 <ul>
-                    <li><a href="###">Sobre mim</a></li>
+                    <li><a href="youtube.com">Sobre mim</a></li>
                     <li><a href="###">Formação</a></li>
                     <li><a href="###">Portifólio</a></li>
                     <li><a href="###">Contato</a></li>
@@ -42,12 +45,15 @@
             </menu>
         </div>
     </header>
+    <!-- Fim da barra de navegação -->
 
+    <!-- Início da primeira section -->
     <section>
         <div class="section">
             <div class="saudacao">
                 <div class="mensagem">
-                    <h2>Olá, me chamo André!</h2>
+                                           <!-- span para fazer o efeito -->
+                    <h2>Olá, me chamo André<span id="linha">|</span></h2>
                 </div>
 
                 <div class="img">
@@ -57,12 +63,55 @@
 
             <div class="containerTitulo">
                 <h2>Desenvolvedor Freelancer, Estudante & Amante de Programação!</h2>
+                <p>Hello word! Sou apaixonado por programação, sempre procurando novos desafios e aprendizados na área. Além disso, adoro jogar e ler, equilibrando meu tempo entre jogos empolgantes e boas leituras.Tenho 18 anos e moro em Tucano, Bahia. Penso que cada dia é uma oportunidade para me aprofundar em algo novo do mundo do desenvolvimento!</p>
+                <img src="./src/img/me.png" alt="Foto de ícone">
+            </div>
+
+            <!-- Div dos cards das competências -->
+            <div class="containerCompetencias">
+                <div class="titulo">
+                    <h2>Minhas competências</h2>
+                </div>
+
+                <div class="containerCard">
+                    <div class="card">
+                        <div class="icone">
+                            <p>Frontend</p>
+                            <img src="./src/img/frontend.svg" alt="Frontend icone">
+                        </div>
+                        <div class="competencias">
+                            <ul>
+                                <!-- Competências -->
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Reactjs</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="icone">
+                            <p>Backend</p>
+                            <img src="./src/img/backend.svg" alt="Backend icone">
+                        </div>
+                        <div class="competencias">
+                            <ul>
+                                <!-- Competências -->
+                                <li>PHP</li>
+                                <li>Python</li>
+                                <li>NodeJS</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        
     </section>
+    <!-- Fim da primeira section (nessa página só terá uma)-->
 
+    <!-- Início do footer -->
     <footer></footer>
 
     <script src="./src/js/navbar.js"></script>

@@ -4,7 +4,7 @@
     display: flex;
     width: 100%;
     background-color: var(--cor-secundaria);
-    margin: 3em auto;
+    margin: 7em auto;
     align-items: center;
     box-sizing: border-box;
     border-radius: 20px;
@@ -21,6 +21,19 @@
     font-size: 42px;
 }
 
+.mensagem h2 span{
+    font-weight: lighter;
+    animation: piscar 1s infinite ease;
+    z-index: 0;
+}
+
+@keyframes piscar{
+    0% { opacity: 1; }
+    49% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
 .img{
     width: 50%;
     text-align: center;
@@ -33,4 +46,126 @@
 
 .containerTitulo{
     width: 100%;
+    padding: 3em 0;
+    text-align: center;
+}
+
+.containerTitulo h2{
+    font-size: 22px;
+}
+
+.containerTitulo p{
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 30px;
+    width: 70%;
+    margin: 30px auto;
+}
+
+.containerTitulo img{
+    width: 300px;
+    margin-top: 30px;
+}
+
+.containerCompetencias{
+    background-color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 4em 0;
+    border-radius: 20px;
+}
+
+.containerCard{
+    display: flex;
+    width: 100%;
+}
+
+.card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+}
+
+.icone{    
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items:middle;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.icone img{
+    width: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.competencias ul{
+    list-style: none;
+}
+
+.competencias ul li{
+    margin: 10px 0;
+}
+
+@media(max-width: 600px){
+    .saudacao{
+        flex-direction:column;
+    }
+
+    .mensagem h2{
+        font-size: 18px;
+        text-wrap: nowrap;
+        margin-bottom: 30px;
+    }
+
+    .img img{
+        width: 100%;
+    }
+
+    .containerTitulo h2{
+        font-size: 18px;
+    }
+
+    .containerTitulo p{
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .containerTitulo img{
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .containerCard{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .titulo h2{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .card{
+        width: 100%;
+        justify-content: center;
+        padding: 1em 0;
+    }
+
+    .icone p{
+        font-size: 16px;
+    }
+
+    .icone img{
+        width: 18px;
+        margin-bottom: 0;
+    }
+
+    .competencias ul li{
+        font-size: 14px;
+    }
 }

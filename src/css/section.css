@@ -8,3 +8,9 @@ section{
     width: 100%;
     padding: 5em 5em;
 }
+
+@media(max-width: 600px){
+    .section{
+        padding: 5em 2em;
+    }
+}
