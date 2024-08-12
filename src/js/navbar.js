@@ -22,4 +22,7 @@ document.body.onresize = function() {
     if (document.body.clientWidth > 600) {
         fecharMenu();
     }
-};
+}
+
+//mudar variável do CSS (fazer depois)
+//document.documentElement.style.setProperty('--cor-principal', "#f6f4ff")
