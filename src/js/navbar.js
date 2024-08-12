@@ -16,3 +16,10 @@ function fecharMenu(){
     menuMobile.style.display = "none";
     linha.style.display = "inline";
 }
+
+//para o menu lateral nao ficar aparecendo quando muda o tamanho da janela
+document.body.onresize = function() {
+    if (document.body.clientWidth > 600) {
+        fecharMenu();
+    }
+};

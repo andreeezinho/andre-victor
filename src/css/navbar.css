@@ -108,6 +108,18 @@ header{
         right: 0;
         top: 0;
         z-index: 1;
+        animation: animacao 0.6s ease-in;
+        animation-delay: 0;
+    }
+
+    @keyframes animacao{
+        from{
+            translate: 50vw 0;
+        }
+    
+        to{
+            translate: 0 0;
+        }
     }
 
     #menuMobile img{
