@@ -17,6 +17,26 @@
     text-align: center;
 }
 
+/* span para o efeito de escrever */
+#escrever{
+    position: absolute;
+    width: 41%;
+    height: 30%;
+    background-color: var(--cor-secundaria);
+    transform: translateY(-50%);
+    top: 50%;
+    right: 50%;
+    animation: escrevendo 4s steps(30) 1s forwards;
+    z-index: 1;
+}
+
+/* animação para efeito de escrever */
+@keyframes escrevendo {
+    to{
+        width: 0;
+    }
+}
+
 .mensagem h2{ 
     font-size: 42px;
 }
@@ -129,6 +149,13 @@
 @media(max-width: 600px){
     .saudacao{
         flex-direction:column;
+    }
+
+    #escrever{
+        top: 30%;
+        right: 10%;
+        height: 60px;
+        width: 63%;
     }
 
     .mensagem h2{
