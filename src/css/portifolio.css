@@ -25,7 +25,7 @@ section{
     display: grid;
     width: 100%;
     height: 80%;
-    grid-template-columns: repeat(4, 300px);
+    grid-template-columns: repeat(auto-fit, 300px);
     gap: 20px;
     justify-content: center;
     margin-top: 5em;
@@ -62,7 +62,7 @@ section{
 }
 
 .descricao h3{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .descricao p{
@@ -94,4 +94,41 @@ section{
     background-color: var(--cor-detalhes);
     color: var(--cor-principal);
     padding: 10px 30px;
+}
+
+/* Responsividade para mobile */
+@media(max-width: 600px){
+    .titulo{
+        margin-top: 3em;
+    }
+
+    .containerProjetos{
+        margin-top: 2em;
+        height: min-content;
+        padding-bottom: 2em;
+        grid-template-columns: repeat(auto-fit, 250px);
+    }
+
+    .card{
+        height: 250px;
+    }
+
+    .descricao h3{
+        font-size: 14px;
+    }
+    
+    .descricao p{
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .btn a{
+        padding: 8px 18px;
+    }
+    
+    .btn a:hover{
+        background-color: var(--cor-detalhes);
+        color: var(--cor-principal);
+        padding: 8px 25px;
+    }
 }
