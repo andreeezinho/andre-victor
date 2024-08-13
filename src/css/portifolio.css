@@ -1,0 +1,97 @@
+section{
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items:end; 
+    justify-content: center;
+}
+
+.titulo h2{
+    font-size: 24px;
+}
+
+.containerProjetos{
+    display: grid;
+    width: 100%;
+    height: 80%;
+    grid-template-columns: repeat(4, 300px);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.card{
+    height: 300px;
+    background-color: var(--cor-secundaria);
+    padding: 1em;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .img img{
+    filter: brightness(0.25);
+}
+
+.img{
+    text-align: center;
+}
+
+.img img{
+    width: 100%;
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+}
+
+.descricao h3{
+    font-size: 16px;
+}
+
+.descricao p{
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.btn{
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.btn a{
+    position: relative;
+    background-color: transparent;
+    color: var(--cor-detalhes);
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid var(--cor-detalhes);
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn a:hover{
+    background-color: var(--cor-detalhes);
+    color: var(--cor-principal);
+    padding: 10px 30px;
+}
