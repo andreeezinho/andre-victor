@@ -82,6 +82,10 @@ header{
         padding: 1em 2em;
     }
 
+    .logo img{
+        width: 40px;
+    }
+
     #barras{
         display: flex;
         position: absolute;
