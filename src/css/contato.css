@@ -1,13 +1,67 @@
 .section{
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+}
+
+#cardMsg{
+    display: none;
+    position: fixed;
+    transform: translateX(-50%) ;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    background-color: var(--cor-detalhes);
+    transition: all 0.4s ease;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes subir {
+    from{
+        translate: 0 85px;
+    }
+
+    to{
+        translate: 0 0;
+    }
+}
+
+@keyframes descer {
+    from{
+        translate: 0 0;
+    }
+
+    to{
+        translate: 0 85px;
+    }
+}
+
+#cardMsg span{
+    color: var(--cor-secundaria);
+    font-size: 18px;
+    margin-left: 5px;
+    font-weight: bold;
 }
 
 .form{
     background-color: var(--cor-secundaria);
     width: 500px;
     padding: 2em;
+    padding-bottom: 3em;
+    text-align: center;
+    position: relative;
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 input:focus{
@@ -88,4 +142,76 @@ button:hover p{
 
 button:hover i{
     color: var(--cor-detalhes);
+}
+
+.form span{
+    position: absolute;
+    bottom: 15px;
+    transform: translateX(-50%);
+    left: 50%;
+    display: none;
+    color: #767676;
+    font-size: 12px;
+    text-wrap: nowrap;
+}
+
+/* Responsividade para mobile */
+@media(max-width: 700px){
+    .section{
+        height: 100%;
+    }
+
+    #cardMsg{
+        height: 40px;
+    }
+
+    @keyframes subir {
+        from{
+            translate: 0 45px;
+        }
+    
+        to{
+            translate: 0 0;
+        }
+    }
+    
+    @keyframes descer {
+        from{
+            translate: 0 0;
+        }
+    
+        to{
+            translate: 0 45px;
+        }
+    }
+
+    #cardMsg span{
+        font-size: 12px;
+    }
+
+    .form{
+        width: 80%;
+        margin-top: 8em;
+    }
+
+    .info input{
+        font-size: 10px;
+    }
+
+    .texto textarea{
+        font-size: 10px;
+    }
+
+    button{ 
+        padding: 1em 0 1em 1em;
+    }
+    
+    button p{
+        font-size: 10px;
+    }
+    
+    button i{
+        font-size: 14px;
+        width: 30px;
+    }
 }
