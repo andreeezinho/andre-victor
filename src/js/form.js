@@ -1,4 +1,4 @@
-//elementos DOM
+//elementos do formulário
 var nome = document.getElementById("nome");
 var email = document.getElementById("email");
 var texto = document.getElementById("texto");
@@ -12,11 +12,12 @@ btn.addEventListener('click', enviarMsg);
 
 //valida se há algo escrito nos inputs
 function enviarMsg(e) {
+    //se todos os campos estiverem preenchidos fica ok
     if(nome.value != "" && email.value != "" && mensagem.value != ""){
         console.log("MENSAGEM ENVIADA COM SUCESSO!");
         cardMsg.style.display = "flex";
         cardMsg.style.animationName = "subir";
-    }else{
+    }else{//se nao, validar qual nao está e deixar a borda vermelha
         if(nome.value != ""){
             console.log("Nome ok")
         }else{

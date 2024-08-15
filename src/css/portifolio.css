@@ -59,6 +59,7 @@ section{
     align-items: center;
     justify-content: center;
     height: 25%;
+    text-align: center;
 }
 
 .descricao h3{

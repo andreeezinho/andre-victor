@@ -1,17 +1,10 @@
+/* Importando fontes do google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* Definindo cores padrões */
 :root{
     --cor-principal: #101010;
     --cor-secundaria: #151515;
     --cor-detalhes: #bd0d59;
     --fonte: "Ubuntu";
 }
-
-
-/* #8e77a1*/
-
-/* --cor-principal: #f9ebf2; branquinho
---cor-secundaria: #f3e2e8;  branco meio rosa
---cor-detalhes: #3c363b; cinza */

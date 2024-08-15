@@ -103,7 +103,6 @@ header{
     }
 
     #menuMobile{
-        display: none;
         position: fixed;
         background-color: var(--cor-secundaria);
         box-shadow: -1px 0 5px var(--cor-secundaria);
@@ -114,6 +113,7 @@ header{
         z-index: 1;
         animation: animacao 0.6s ease-in;
         animation-delay: 0;
+        animation-fill-mode: forwards;
     }
 
     @keyframes animacao{
@@ -123,6 +123,16 @@ header{
     
         to{
             translate: 0 0;
+        }
+    }
+
+    @keyframes voltar{
+        from{
+            translate: 0 0;
+        }
+    
+        to{
+            translate: 50vw 0;
         }
     }
 

@@ -8,12 +8,13 @@ var linha = document.getElementById("linha");
 function abrirMenu(){
     //abrir a barra lateral mobile
     menuMobile.style.display = "flex";
+    menuMobile.style.animationName = "animacao";
     linha.style.display = "none";
 }
 
 function fecharMenu(){
     //fechar a barra lateral mobile
-    menuMobile.style.display = "none";
+    menuMobile.style.animationName = "voltar";
     linha.style.display = "inline";
 }
 
